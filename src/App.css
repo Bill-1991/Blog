@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.App{
+    background-color: #282c34;
+    color: white;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+    min-height: 5vh;
+    display: grid !important;
+    grid-template-columns: 60% 40%;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav button{
+    border: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav button:hover{
+    color: black
 }
 
-.App-link {
-  color: #61dafb;
+.nav .gen-nav{
+    display: flex;
+    gap: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav .log-out{
+    display: flex;
+    justify-content: flex-end !important;      
+}
+
+.nav .log-out button{
+    background-color: blue;
+}
+
+.nav h4{
+    font-size: 20px;
+    align-self: end;
+    margin-left: 20px;
+    color: rgba(140, 255, 65, 1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav .log-in{
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 70% 30%;
+    justify-content: end;
+    gap: 10px;
+}
+
+.nav .log-in p{
+    justify-self: end !important;
+    align-self: start !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aquamarine;
+    font-size: 16px;
+    position: relative;
+    top: 8px;
+}
+
+.nav .log-in button{
+    background-color: blue;
+}
+
+.signin{
+    font-size: 18px;
+}
+
+.signin{
+    height: 90vh !important;
+}
+
+.signform{
+    width: 100% !important;
+    display: grid;
+    position: relative;
+    top: 100px;
+}
+
+.signname{
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.signpass{
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.signemail{
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.logform{
+    width: 100% !important;
+    display: grid;
+    position: relative;
+    top: 100px;
+}
+
+.logname{
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
+}
+
+.logpass{
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
 }
