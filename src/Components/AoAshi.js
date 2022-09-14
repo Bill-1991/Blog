@@ -20,9 +20,7 @@ import { Row, Col, Container } from "react-bootstrap"
             </Col>
         </Row>
         <div id="chat" style={{width: "100%", alignItems: "end", gridTemplateColumns: "50% 50%"}} className='d-grid chatRoom'>
-        <div>
-            <h1>{props.loggedInUser.username}</h1>
-        </div>
+        
         <div>
             <div className="messages" style={{width: "100%"}}>
                 {props.chatRoom.map(user => <div className='mt-2' style={{display: "flex"}}>

@@ -11,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Container} from "react-bootstrap"
 import Axios from "axios";
 
+
 function App() {
 
   const [userName, setUserName] = useState("")
@@ -140,7 +141,7 @@ function App() {
       <NavBar collapse={collapse} handleCollapse={handleCollapse} image={image} loggedIn={loggedIn} loggedInUser={loggedInUser} handleLoggedOut={handleLoggedOut} />
       <Routes>
        <Route exact path="/" element={<Home loggedIn={loggedIn} loggedInUser={loggedInUser} />} />
-       <Route exact path="/signin" element={<SignIn handleImage={handleImage} wrongPass={wrongPass} userName={userName} passWord={passWord} email={email} handleNameChange={handleNameChange} handlePassChange={handlePassChange} handleEmailChange={handleEmailChange} handleSubmit={handleSubmit} allUsers={allUsers} user={user} />} />
+       <Route exact path="/signup" element={<SignIn handleImage={handleImage} wrongPass={wrongPass} userName={userName} passWord={passWord} email={email} handleNameChange={handleNameChange} handlePassChange={handlePassChange} handleEmailChange={handleEmailChange} handleSubmit={handleSubmit} allUsers={allUsers} user={user} />} />
        <Route exact path="/login" element={loggedIn === true ? (<Navigate replace to="/" />) : (<LogIn logInUserName={logInUserName} loggedIn={loggedIn} logInPassWord={logInPassWord} loggedInUser={loggedInUser} handleLoggedInSubmit={handleLoggedInSubmit} handleLogInUserName={handleLogInUserName} handleLogInPassWord={handleLogInPassWord}  />)} />   
        <Route exact path="/anime" element={<Anime animeList={animeList} />} />
        <Route exact path="/anime/ao-ashi" element={<AoAshi animeList={animeList} chatRoom={chatRoom} message={message} handleChatRoom={handleChatRoom} handleMessage={handleMessage} />} />
