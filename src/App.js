@@ -129,7 +129,7 @@ function App() {
         password: passWord,
         email: email,
       }).then(() => {
-        console.log("success")
+        console.log("inputted")
       })
   }
 
